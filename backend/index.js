@@ -1,8 +1,9 @@
 const express = require('express')
 const mongoose=require('mongoose')
 const app = express()
-const port = 3000
-
+const port = 5000
+const cors=require('cors')
+app.use(cors())
 app.use(express.json())
 // const user=require('./models/userModel')
 const router=require("./Routes/userRoutes")
